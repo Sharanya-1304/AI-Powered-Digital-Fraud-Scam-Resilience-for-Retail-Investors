@@ -1,0 +1,25 @@
+{
+  "name": "sangyan-shield",
+  "version": "1.0.0",
+  "description": "SANGYAN SHIELD - Digital Fraud & Scam Resilience Assistant (Track A)",
+  "scripts": {
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "preview": "npm run preview --prefix frontend",
+    "backend": "python -m uvicorn app.main:app --app-dir backend --reload --port 8000",
+    "audit": "python audit_all.py",
+    "test:all": "python audit_all.py",
+    "test:backend": "python backend/tests/test_risk_engine.py && python backend/tests/test_ml_pipeline.py",
+    "test:ml": "python -m pytest ml/tests/ -v"
+  },
+  "keywords": [
+    "sangyan-hackathon-2026",
+    "sebi",
+    "nsdl",
+    "fraud-resilience",
+    "investor-safety",
+    "cybersecurity"
+  ],
+  "author": "SANGYAN Track A Team",
+  "license": "MIT"
+}

@@ -1,0 +1,52 @@
+{
+  "total_records": 124,
+  "valid": true,
+  "critical_issues_count": 0,
+  "warning_issues_count": 0,
+  "issues": [],
+  "class_distribution": {
+    "BENIGN": 46,
+    "SUSPICIOUS": 9,
+    "SCAM_LIKE": 69
+  },
+  "language_distribution": {
+    "en": 101,
+    "hi": 12,
+    "te": 11
+  },
+  "signal_distribution": {
+    "GUARANTEED_RETURN": 30,
+    "URGENCY": 25,
+    "OTP_REQUEST": 15,
+    "PAYMENT_REQUEST": 23,
+    "IMPERSONATION": 15,
+    "FAKE_REGISTRATION": 5,
+    "FAKE_APP": 10,
+    "SUSPICIOUS_URL": 3,
+    "REFERRAL_PRESSURE": 6,
+    "WITHDRAWAL_FEE": 11,
+    "SOCIAL_PROOF": 11,
+    "EMOTIONAL_PRESSURE": 7,
+    "INVESTMENT_SOLICITATION": 22,
+    "PASSWORD_REQUEST": 2,
+    "PIN_REQUEST": 1,
+    "UNKNOWN_APP": 10
+  },
+  "leakage_verification": {
+    "train_val_id_leak": 0,
+    "train_test_id_leak": 0,
+    "val_test_id_leak": 0,
+    "train_val_text_leak": 0,
+    "train_test_text_leak": 0,
+    "val_test_text_leak": 0,
+    "leakage_detected": false
+  },
+  "split_counts": {
+    "train": 84,
+    "validation": 16,
+    "test": 24,
+    "train_percentage": 67.7,
+    "validation_percentage": 12.9,
+    "test_percentage": 19.4
+  }
+}

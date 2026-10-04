@@ -1,0 +1,31 @@
+{
+  "model_name": "sangyan-scam-classifier",
+  "version": "1.0.0",
+  "training_timestamp": "2026-10-04T06:16:15.841005+00:00",
+  "dataset_version": "2026-10-04-v1",
+  "num_train_samples": 84,
+  "num_val_samples": 16,
+  "num_test_samples": 24,
+  "random_seed": 42,
+  "task_a": {
+    "model_type": "Dual-TFIDF FeatureUnion + Calibrated Logistic Regression",
+    "calibration": "sigmoid (Platt scaling)",
+    "classes": [
+      "BENIGN",
+      "SCAM_LIKE",
+      "SUSPICIOUS"
+    ]
+  },
+  "task_b": {
+    "model_type": "OneVsRest Calibrated Binary Units",
+    "signals_count": 16,
+    "safety_critical_signals": [
+      "FAKE_APP",
+      "PAYMENT_REQUEST",
+      "SUSPICIOUS_URL",
+      "PIN_REQUEST",
+      "OTP_REQUEST",
+      "PASSWORD_REQUEST"
+    ]
+  }
+}

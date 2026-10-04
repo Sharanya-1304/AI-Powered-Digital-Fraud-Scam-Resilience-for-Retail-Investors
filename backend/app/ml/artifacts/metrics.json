@@ -1,0 +1,165 @@
+{
+  "model_architecture": "CalibratedLogisticRegression",
+  "pipeline_version": "1.0.0-cyber-resilience",
+  "training_timestamp": "2026-10-04T06:16:41.513680+00:00",
+  "random_state": 42,
+  "dataset_split": {
+    "total_samples": 99,
+    "train_samples": 79,
+    "test_samples": 20,
+    "scam_ratio": 0.545
+  },
+  "cross_validation_f1": {
+    "CalibratedLogisticRegression": {
+      "mean_f1": 0.8681,
+      "std_f1": 0.0486
+    },
+    "LinearSVC_Calibrated": {
+      "mean_f1": 0.8679,
+      "std_f1": 0.0448
+    },
+    "RandomForest": {
+      "mean_f1": 0.8608,
+      "std_f1": 0.0481
+    }
+  },
+  "test_metrics": {
+    "accuracy": 0.95,
+    "precision": 1.0,
+    "recall": 0.9091,
+    "f1_score": 0.9524,
+    "roc_auc": 1.0,
+    "confusion_matrix": {
+      "true_negative": 9,
+      "false_positive": 0,
+      "false_negative": 1,
+      "true_positive": 10
+    }
+  },
+  "explainability": {
+    "top_scam_indicators": [
+      {
+        "feature": "credential_intensity",
+        "weight": 1.3061
+      },
+      {
+        "feature": "apk_indicator",
+        "weight": 0.9542
+      },
+      {
+        "feature": "exclamation_density",
+        "weight": 0.7843
+      },
+      {
+        "feature": "guarantee_intensity",
+        "weight": 0.7794
+      },
+      {
+        "feature": "payment_intensity",
+        "weight": 0.7558
+      },
+      {
+        "feature": "urgency_intensity",
+        "weight": 0.7118
+      },
+      {
+        "feature": "contact_handle_indicator",
+        "weight": 0.4684
+      },
+      {
+        "feature": "tfidf_features__trading",
+        "weight": 0.3157
+      },
+      {
+        "feature": "tfidf_features__vip",
+        "weight": 0.2802
+      },
+      {
+        "feature": "tfidf_features__vip trading",
+        "weight": 0.2683
+      },
+      {
+        "feature": "tfidf_features__daily",
+        "weight": 0.2682
+      },
+      {
+        "feature": "currency_symbol_density",
+        "weight": 0.2585
+      },
+      {
+        "feature": "tfidf_features__our",
+        "weight": 0.2538
+      },
+      {
+        "feature": "tfidf_features__join",
+        "weight": 0.242
+      },
+      {
+        "feature": "tfidf_features__5",
+        "weight": 0.2279
+      }
+    ],
+    "top_benign_indicators": [
+      {
+        "feature": "character_length_scaled",
+        "weight": -1.2988
+      },
+      {
+        "feature": "capital_ratio",
+        "weight": -0.8224
+      },
+      {
+        "feature": "tfidf_features__has",
+        "weight": -0.2806
+      },
+      {
+        "feature": "tfidf_features__been",
+        "weight": -0.2674
+      },
+      {
+        "feature": "tfidf_features__account",
+        "weight": -0.2402
+      },
+      {
+        "feature": "tfidf_features__ending",
+        "weight": -0.2296
+      },
+      {
+        "feature": "tfidf_features__account ending",
+        "weight": -0.2296
+      },
+      {
+        "feature": "tfidf_features__has been",
+        "weight": -0.2241
+      },
+      {
+        "feature": "tfidf_features__registered",
+        "weight": -0.2179
+      },
+      {
+        "feature": "tfidf_features__2026",
+        "weight": -0.2155
+      },
+      {
+        "feature": "tfidf_features__bank account",
+        "weight": -0.2112
+      },
+      {
+        "feature": "tfidf_features__bank",
+        "weight": -0.2
+      },
+      {
+        "feature": "tfidf_features__account ending in",
+        "weight": -0.1925
+      },
+      {
+        "feature": "tfidf_features__ending in",
+        "weight": -0.1925
+      },
+      {
+        "feature": "tfidf_features__limited",
+        "weight": -0.1779
+      }
+    ]
+  }
+}

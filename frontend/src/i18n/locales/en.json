@@ -1,0 +1,93 @@
+{
+  "nav": {
+    "home": "Home",
+    "scan": "Scan",
+    "verify": "Verify",
+    "learn": "Learn",
+    "safety": "Safety",
+    "demo": "Demo Center",
+    "dashboard": "Dashboard",
+    "about": "About",
+    "scanNow": "Scan Now"
+  },
+  "hero": {
+    "badge": "Digital Fraud & Scam Resilience Assistant",
+    "title": "Before you trust it, check it.",
+    "subtitle": "Scan suspicious investment messages, screenshots and links. Understand the warning signs. Verify the claim. Take safer action.",
+    "ctaScan": "Scan Something Suspicious",
+    "ctaLearn": "Learn to Spot Scams",
+    "privacyNotice": "Private by design • No OTPs • No passwords • No brokerage login"
+  },
+  "quickScan": {
+    "heading": "What do you want to check?",
+    "messageTitle": "Suspicious Message",
+    "messageDesc": "Paste a WhatsApp, Telegram, SMS or DM investment offer",
+    "messageBtn": "Scan Message",
+    "screenshotTitle": "App Screenshot",
+    "screenshotDesc": "Upload a trading chat, profit report, or group screenshot",
+    "screenshotBtn": "Analyze Screenshot",
+    "urlTitle": "Suspicious Link",
+    "urlDesc": "Check an investment website, trading portal, or APK download URL",
+    "urlBtn": "Check Link",
+    "voiceTitle": "Call Transcript",
+    "voiceDesc": "Check a suspicious caller script or investment voice note",
+    "voiceBtn": "Analyze Voice / Text",
+    "beta": "Beta"
+  },
+  "howItWorks": {
+    "title": "Evidence-First Verification Pipeline",
+    "subtitle": "We don't just tell you something looks risky. We show you exactly why.",
+    "step1Title": "01 — Scan",
+    "step1Desc": "Paste suspicious text, upload a screenshot, or enter a URL securely.",
+    "step2Title": "02 — Detect",
+    "step2Desc": "Extract evidence, analyze regex rules, NLP patterns, and safety indicators.",
+    "step3Title": "03 — Explain",
+    "step3Desc": "Understand what triggered each warning and why it represents an investor hazard.",
+    "step4Title": "04 — Verify",
+    "step4Desc": "Cross-reference claims with official SEBI registration registries.",
+    "step5Title": "05 — Protect",
+    "step5Desc": "Execute a structured safety action plan before any financial transfer."
+  },
+  "riskBands": {
+    "LOW_CONCERN": "Low Concern",
+    "NEEDS_VERIFICATION": "Needs Verification",
+    "HIGH_CONCERN": "High Concern",
+    "CRITICAL_SAFETY_WARNING": "Critical Safety Warning"
+  },
+  "scanners": {
+    "textTitle": "Check a suspicious message",
+    "textSubtitle": "Paste the investment message exactly as you received it from WhatsApp, Telegram, SMS, or social media.",
+    "placeholder": "Example: Guaranteed 30% monthly return! Pay ₹5,000 today to activate your institutional VIP trading slot...",
+    "btnAnalyze": "Analyze Message",
+    "btnClear": "Clear",
+    "privacyBanner": "Never enter OTPs, passwords, PINs or bank credentials. Your data is analyzed securely without storage.",
+    "imageTitle": "Analyze Screenshot or Image",
+    "imageSubtitle": "Upload a screenshot of a chat, trading app, deposit slip, or advertisement for OCR extraction.",
+    "urlTitle": "Analyze Investment Link",
+    "urlSubtitle": "Enter a suspicious website, app download link, or trading platform URL."
+  },
+  "results": {
+    "assessmentTitle": "Safety Assessment",
+    "prototypeScore": "Prototype Risk Calibration",
+    "scoreDisclaimer": "This calibration score is an indicative heuristic prototype and not a formal regulatory measurement.",
+    "whyConcerned": "Why are we concerned?",
+    "whatDetected": "What was detected:",
+    "whyItMatters": "Why it matters:",
+    "safeActionTitle": "What should you do now?",
+    "evidenceSnippet": "Original Detected Evidence:",
+    "entityCheckTitle": "Official Entity Verification"
+  },
+  "verify": {
+    "title": "Intermediary & Entity Verification",
+    "subtitle": "Check if an investment adviser, broker, or financial entity is recognized on official regulatory lists.",
+    "nameLabel": "Company or Intermediary Name",
+    "regLabel": "Claimed SEBI Registration Number",
+    "domainLabel": "Official Website / Domain",
+    "btnVerify": "Verify Entity",
+    "disclaimer": "Registration match does not prove that a particular private message, phone call, or payment request is genuine."
+  },
+  "footer": {
+    "disclaimer": "Sangyan Shield is an investor safety and scam resilience assistant developed for SANGYAN Hackathon 2026. It is not an investment advisor, does not provide stock recommendations, and is not a financial intermediary.",
+    "emergency": "National Cyber Crime Helpline: 1930 | cybercrime.gov.in"
+  }
+}

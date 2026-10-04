@@ -1,0 +1,247 @@
+{
+  "evaluation_dataset": {
+    "test_sample_count": 24,
+    "test_path": "ml/datasets/test/test.jsonl"
+  },
+  "task_a_classification": {
+    "macro_precision": 0.4735,
+    "macro_recall": 0.5644,
+    "macro_f1": 0.5145,
+    "weighted_f1": 0.6045,
+    "confusion_matrix": {
+      "classes": [
+        "BENIGN",
+        "SUSPICIOUS",
+        "SCAM_LIKE"
+      ],
+      "matrix": [
+        [
+          7,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          4
+        ],
+        [
+          1,
+          1,
+          9
+        ]
+      ]
+    },
+    "per_class": {
+      "BENIGN": {
+        "precision": 0.7778,
+        "recall": 0.875,
+        "f1": 0.8235,
+        "support": 8,
+        "false_positive_rate": 0.125,
+        "false_negative_rate": 0.125
+      },
+      "SUSPICIOUS": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 5,
+        "false_positive_rate": 0.0526,
+        "false_negative_rate": 1.0
+      },
+      "SCAM_LIKE": {
+        "precision": 0.6429,
+        "recall": 0.8182,
+        "f1": 0.72,
+        "support": 11,
+        "false_positive_rate": 0.3846,
+        "false_negative_rate": 0.1818
+      }
+    }
+  },
+  "multilingual_evaluation": {
+    "en": {
+      "precision": 0.4735,
+      "recall": 0.625,
+      "f1": 0.527,
+      "sample_count": 19
+    },
+    "hi": {
+      "precision": 0.5,
+      "recall": 0.3333,
+      "f1": 0.4,
+      "sample_count": 3
+    },
+    "te": {
+      "precision": 0.5,
+      "recall": 0.25,
+      "f1": 0.3333,
+      "sample_count": 2
+    }
+  },
+  "calibration": {
+    "brier_score": 0.4161,
+    "expected_calibration_error": 0.1325,
+    "reliability_bins": [
+      {
+        "bin_range": "0.3-0.4",
+        "sample_count": 1,
+        "confidence": 0.3977,
+        "accuracy": 0.0,
+        "calibration_gap": 0.3977
+      },
+      {
+        "bin_range": "0.4-0.5",
+        "sample_count": 2,
+        "confidence": 0.4742,
+        "accuracy": 0.0,
+        "calibration_gap": 0.4742
+      },
+      {
+        "bin_range": "0.5-0.6",
+        "sample_count": 3,
+        "confidence": 0.5313,
+        "accuracy": 0.3333,
+        "calibration_gap": 0.1979
+      },
+      {
+        "bin_range": "0.6-0.7",
+        "sample_count": 5,
+        "confidence": 0.653,
+        "accuracy": 0.6,
+        "calibration_gap": 0.053
+      },
+      {
+        "bin_range": "0.7-0.8",
+        "sample_count": 3,
+        "confidence": 0.7657,
+        "accuracy": 1.0,
+        "calibration_gap": 0.2343
+      },
+      {
+        "bin_range": "0.8-0.9",
+        "sample_count": 8,
+        "confidence": 0.8651,
+        "accuracy": 0.875,
+        "calibration_gap": 0.0099
+      },
+      {
+        "bin_range": "0.9-1.0",
+        "sample_count": 2,
+        "confidence": 0.904,
+        "accuracy": 1.0,
+        "calibration_gap": 0.096
+      }
+    ],
+    "is_well_calibrated": true
+  },
+  "task_b_multilabel": {
+    "micro_precision": 0.6875,
+    "micro_recall": 0.5946,
+    "micro_f1": 0.6377,
+    "macro_f1": 0.4858,
+    "per_signal": {
+      "GUARANTEED_RETURN": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1": 0.8889,
+        "support": 5
+      },
+      "URGENCY": {
+        "precision": 0.8,
+        "recall": 0.6667,
+        "f1": 0.7273,
+        "support": 6
+      },
+      "OTP_REQUEST": {
+        "precision": 0.75,
+        "recall": 1.0,
+        "f1": 0.8571,
+        "support": 3
+      },
+      "PAYMENT_REQUEST": {
+        "precision": 0.5,
+        "recall": 1.0,
+        "f1": 0.6667,
+        "support": 3
+      },
+      "IMPERSONATION": {
+        "precision": 1.0,
+        "recall": 0.6667,
+        "f1": 0.8,
+        "support": 3
+      },
+      "FAKE_REGISTRATION": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 2
+      },
+      "FAKE_APP": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "SUSPICIOUS_URL": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      },
+      "REFERRAL_PRESSURE": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 2
+      },
+      "WITHDRAWAL_FEE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      },
+      "SOCIAL_PROOF": {
+        "precision": 1.0,
+        "recall": 0.3333,
+        "f1": 0.5,
+        "support": 3
+      },
+      "EMOTIONAL_PRESSURE": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 1
+      },
+      "INVESTMENT_SOLICITATION": {
+        "precision": 0.4,
+        "recall": 0.2857,
+        "f1": 0.3333,
+        "support": 7
+      },
+      "PASSWORD_REQUEST": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "PIN_REQUEST": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      },
+      "UNKNOWN_APP": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 0
+      }
+    }
+  },
+  "safety_critical_summary": {
+    "safety_recall": 1.0,
+    "total_false_negatives": 0,
+    "assessment": "COMPLIANT: Zero or acceptable false negatives observed on safety-critical credentials."
+  }
+}

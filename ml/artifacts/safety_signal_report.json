@@ -1,0 +1,45 @@
+{
+  "overall_safety_signal_recall": 1.0,
+  "total_safety_instances": 7,
+  "total_safety_detected": 7,
+  "total_false_negatives": 0,
+  "signals": {
+    "OTP_REQUEST": {
+      "ground_truth_count": 3,
+      "detected_count": 3,
+      "false_negative_count": 0,
+      "false_negative_samples": []
+    },
+    "PAYMENT_REQUEST": {
+      "ground_truth_count": 3,
+      "detected_count": 3,
+      "false_negative_count": 0,
+      "false_negative_samples": []
+    },
+    "PASSWORD_REQUEST": {
+      "ground_truth_count": 0,
+      "detected_count": 0,
+      "false_negative_count": 0,
+      "false_negative_samples": []
+    },
+    "PIN_REQUEST": {
+      "ground_truth_count": 0,
+      "detected_count": 0,
+      "false_negative_count": 0,
+      "false_negative_samples": []
+    },
+    "FAKE_APP": {
+      "ground_truth_count": 0,
+      "detected_count": 0,
+      "false_negative_count": 0,
+      "false_negative_samples": []
+    },
+    "SUSPICIOUS_URL": {
+      "ground_truth_count": 1,
+      "detected_count": 1,
+      "false_negative_count": 0,
+      "false_negative_samples": []
+    }
+  },
+  "assessment": "COMPLIANT: Zero or acceptable false negatives observed on safety-critical credentials."
+}
