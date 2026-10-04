@@ -1,0 +1,17 @@
+{
+  "include": [
+    "backend",
+    "ml"
+  ],
+  "executionEnvironments": [
+    {
+      "root": "backend",
+      "extraPaths": [
+        "backend"
+      ]
+    }
+  ],
+  "extraPaths": [
+    "backend"
+  ]
+}
